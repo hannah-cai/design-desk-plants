@@ -263,7 +263,7 @@ function setup() {
 }
 
 function draw() {
-
+    background(251,239,236);
     drawJuliaMess();
     // frameRate(1);
 
@@ -816,7 +816,6 @@ function drawJuliaMess() {
 }
 
 function drawBackground() {
-    background(251,239,236);
     textSize(30);
     text('Discover your plant!', marg.l, marg.t);
 }

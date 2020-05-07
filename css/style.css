@@ -1,0 +1,347 @@
+.buttons {
+    font-family: freight-macro-pro, serif;
+    background-color: rgb(251,239,236);
+    color:black;
+    padding: 8px 10px;
+    font-size: 15px;
+    text-align: left;
+    border: none;
+    text-decoration: none;
+}
+
+.buttons:active {
+    background-color: white;
+    color:black;
+}
+
+.checks {
+    font-family: freight-macro-pro, serif;
+    color:black;
+    padding: 8px 10px;
+    font-size: 15px;
+    text-align: left;
+    border: none;
+}
+
+html {
+    background-color: rgb(254,246,243);
+}
+
+/*header*/
+h1.display {
+    font-family: freight-display-pro, serif;
+    font-size: 6.2em;
+    padding-bottom: 15px;
+    color: rgb(60,73,63);
+    font-style: italic;
+}
+
+/*key titles*/
+h1.displayKey { 
+    font-family: freight-display-pro, serif;
+    font-size: 1.8em;
+    color: rgb(60,73,63);
+}
+
+/*body text*/
+p.macro {
+    font-family: freight-macro-pro, serif;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+/*subheader*/
+h2 {
+    font-family: freight-macro-pro, serif;
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(60,73,63);
+}
+
+h2.question {
+    font-family: freight-macro-pro, serif;
+    font-style: italic;
+    font-size: 1.2em;
+    padding-top: 1.6em;
+    padding-bottom: 1.1em;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+/* survey CSS */
+
+
+.sideButton {
+    position: absolute;
+    right: 10%;
+    bottom: 5.3em;
+    font-size: 1.2em;
+    color: rgb(43,98,51);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.sideButton:hover {
+    right: 9.3%;
+}
+
+.sideRect {
+    position: absolute;
+    right: 0%;
+    bottom: 3em;
+    height: 8em;
+    width: 22em;
+    background-color: rgb(251,239,236);
+}
+
+/* key CSS */
+
+.keyImage {
+    width: 150%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.keyText {
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-right: 45%;
+    margin-bottom: 4em;
+    color: rgb(64, 64, 64);
+}
+
+.keySection {
+    padding-bottom: 4em;
+}
+
+/* about page CSS */
+
+@keyframes move
+{
+    0% {
+        left: 100%;
+        top: 21em;
+    }
+    
+    50% {
+        left: 55%;
+        top: 26em;
+    }
+    
+    100% {
+        left: 19.5%;
+        top: 27em;
+    }
+}
+
+#beeFly {
+    left: 19.5%;
+    top: 27em;
+    position: absolute;
+    animation: move 7s ease-in-out;
+}
+
+#bee {
+    width: 5.5em;
+}
+
+.aboutText {
+    margin-top: 8%;
+    margin-left: 10%;
+    margin-right: 54%;
+    color: rgb(64, 64, 64);
+}
+
+.backButton a{
+    font-family: freight-macro-pro, serif;
+    font-style: italic;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    right: 10%;
+    top: 1.5em;
+    position: fixed;
+    transition: .2s;
+    color: rgb(60,73,63);
+}
+
+.backButton a:hover{
+    right:10.8%;
+}
+
+.team img {
+    width: 10.5em;
+    margin-bottom: 1em;
+}
+
+.team {
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.person  {
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    
+}
+
+
+/* explore page CSS */
+
+#keyButton {
+    width: 9em;
+    transition: transform .3s ease-in-out;
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+
+/*
+#keyButton:hover {
+    transform: scale(1.1);
+    animation: none;
+}
+*/
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+.keyCircle {
+    position: absolute;
+    left: 10%;
+    bottom: 3em;
+    display: flex;
+}
+
+.mainNav a{
+    color: rgb(60,73,63);
+    position: relative;
+    top: 1.5em;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.mainNav a:hover{
+    color:grey
+}
+
+#overviewNav {
+    left: 10%;
+    font-family: freight-display-pro, serif;
+    font-style: italic;
+}
+
+#aboutNav {
+    position: absolute;
+    right: 10%;
+    font-family: freight-display-pro, serif;
+    font-style: italic;
+}
+
+/* landing page CSS */
+
+.overviewRect {
+    position: absolute;
+    height: 25em;
+    width: 58em;
+    right: 0;
+    top: 6.2em;
+    background-color: rgb(251,239,236);
+}
+
+.exploreButton {
+    font-family: freight-macro-pro, serif;
+    font-style: italic;
+    font-size: 1.2em;
+    color: rgb(60,73,63);
+    line-height: 1.4em;
+    margin-top: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+    left: 0%;
+}
+
+.exploreButton:hover {
+    left: .8%;
+}
+
+.intro-text {
+    position: absolute;
+    text-align: left;
+    margin-right: 10%;
+    color: rgb(64, 64, 64);
+}
+
+.overviewHeader {
+    margin-top: 10%;
+    text-align: right;
+}
+
+.overviewGen {
+    margin-left: 60%;
+}
+
+/* 3D landing page CSS */
+
+.floating-background {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    z-index: -1;
+    
+}
+.floating-background.is-absolute {
+    position: fixed;
+}
+
+.floating-background img {
+    display: block;
+    width: 100%;
+    width: 100%;
+}
+
+.floating-background img:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.floating-background img:first-child {
+    -webkit-transform: translateZ(10px);
+    -ms-transform: translateZ(10px);
+    transform: translateZ(10px);
+}
+.floating-background img:nth-child(2) {
+    -webkit-transform: translateZ(100px);
+    -ms-transform: translateZ(100px);
+    transform: translateZ(100px);
+}
+.floating-background img:nth-child(3) {
+    -webkit-transform: translateZ(150px);
+    -ms-transform: translateZ(150px);
+    transform: translateZ(150px);
+}
+
+.floating-background img:nth-child(4) {
+    -webkit-transform: translateZ(180px);
+    -ms-transform: translateZ(180px);
+    transform: translateZ(180px);
+}
+
+.no-preserve-3d .floating-background {
+  position: relative;
+}
